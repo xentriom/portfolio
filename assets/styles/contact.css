@@ -1,0 +1,36 @@
+/* Contact Page Styles */
+#contact .contact__form {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#contact .contact__social {
+    padding: 20px;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.contact-icon i {
+    margin-right: 10px;
+}
+
+.contact-icon:hover {
+    color: #007bff;
+}
+
+.contact-icon:active {
+    color: #0056b3;
+}
+
+.row {
+    position: fixed;
+}
