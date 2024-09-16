@@ -1,59 +1,93 @@
-General Styles
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-}
-
-.navbar.dynamic-island {
-    background-color: #333;
-    color: #fff;
-    border-radius: 50px;
-    padding: 10px 20px;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
-    display: flex;
-    gap: 20px;
-    box-shadow: 2px 4px 10px rgba(20, 20, 20, 0.2);
-}
-
-.navbar.dynamic-island a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5vh 1vw;
-    border-radius: 20px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.navbar.dynamic-island a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: scale(1.1);
-}
-
-.main-section {
-    height: 100vh;
-    background-color: #282c34;
+/* Dynamic island styled navbar */
+.nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    overflow: hidden;
+    gap: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
 }
 
-.blurred-shape {
+.main-nav .nav-pills, .display-nav .nav-pills {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav .nav-item, .display-nav .nav-item {
+    flex: 0 0 auto;
+}
+
+html .nav-pills .nav-link {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.display-nav .nav-item .nav-link {
+    padding: 0.5rem 0.8rem;
+}
+
+/* Light theme */
+html[data-bs-theme="light"] {
+    --bs-body-bg: #f6f6f6;
+    --bs-body-color: #000;
+    --bs-secondary-bg: #dadada;
+    --bs-link-color: #000;
+    --bs-link-hover-color: #000;
+}
+
+html[data-bs-theme="light"] .nav-pills {
+    background-color: #fff;
+}
+
+html[data-bs-theme="light"] .nav-pills .nav-link:hover {
+    transform: scale(1.15);
+    background-color: rgba(33, 33, 33, 0.1);
+}
+
+html[data-bs-theme="light"] .nav-pills .nav-link.active {
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+html[data-bs-theme="light"] .blurred-shape {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2);
     filter: blur(50px);
     animation: float 10s ease-in-out infinite;
 }
 
+/* Dark theme */
+html[data-bs-theme="dark"] {
+    --bs-body-bg: #282c34;
+    --bs-body-color: #fff;
+    --bs-secondary-bg: #333;
+    --bs-link-color: #fff;
+    --bs-link-hover-color: #fff;
+}
+
+html[data-bs-theme="dark"] .nav-pills {
+    background-color: #333;
+}
+
+html[data-bs-theme="dark"] .nav-pills .nav-link:hover {
+    transform: scale(1.15);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+html[data-bs-theme="dark"] .nav-pills .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+html[data-bs-theme="dark"] .blurred-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(50px);
+    animation: float 10s ease-in-out infinite;
+}
+
+/* Shape and keyframes */
 .shape1 {
     width: 200px;
     height: 200px;
@@ -77,7 +111,7 @@ html {
 
 @keyframes float {
     0% {
-        transform: translateY(0px);
+        transform: translateY(0);
     }
 
     50% {
@@ -85,6 +119,6 @@ html {
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(0);
     }
 }
