@@ -27,6 +27,11 @@ html .nav-pills .nav-link {
     padding: 0.5rem 0.8rem;
 }
 
+html[data-bs-theme="light"] .nav-link.active#light-mode i,
+html[data-bs-theme="dark"] .nav-link.active#dark-mode i {
+    color: inherit;
+}
+
 /* Light theme */
 html[data-bs-theme="light"] {
     --bs-body-bg: #f6f6f6;
@@ -57,6 +62,10 @@ html[data-bs-theme="light"] .blurred-shape {
     animation: float 10s ease-in-out infinite;
 }
 
+html[data-bs-theme="light"] .nav-link#light-mode i {
+    color: #f5b942;
+}
+
 /* Dark theme */
 html[data-bs-theme="dark"] {
     --bs-body-bg: #282c34;
@@ -68,6 +77,12 @@ html[data-bs-theme="dark"] {
 
 html[data-bs-theme="dark"] .nav-pills {
     background-color: #333;
+}
+
+html[data-bs-theme="dark"] .nav-pills .nav-link:focus,
+html[data-bs-theme="dark"] .nav-pills .nav-link:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
 }
 
 html[data-bs-theme="dark"] .nav-pills .nav-link:hover {
@@ -85,6 +100,10 @@ html[data-bs-theme="dark"] .blurred-shape {
     background: rgba(255, 255, 255, 0.2);
     filter: blur(50px);
     animation: float 10s ease-in-out infinite;
+}
+
+html[data-bs-theme="dark"] .nav-link#dark-mode i {
+    color: #67a1e3;
 }
 
 /* Shape and keyframes */
