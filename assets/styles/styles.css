@@ -1,0 +1,90 @@
+General Styles
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar.dynamic-island {
+    background-color: #333;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+    gap: 20px;
+    box-shadow: 2px 4px 10px rgba(20, 20, 20, 0.2);
+}
+
+.navbar.dynamic-island a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5vh 1vw;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar.dynamic-island a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.main-section {
+    height: 100vh;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.blurred-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(50px);
+    animation: float 10s ease-in-out infinite;
+}
+
+.shape1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 15%;
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    top: 60%;
+    left: 70%;
+}
+
+.shape3 {
+    width: 150px;
+    height: 150px;
+    top: 80%;
+    left: 20%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
