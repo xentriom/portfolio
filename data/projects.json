@@ -4,104 +4,41 @@
         "title": "Dull Radiance",
         "description": "A brief description of Project One.",
         "image": "path/to/image1.jpg",
-        "link": "https://example.com/project-one"
+        "link": "https://github.com/somedayvid/Dull-Radiance"
     },
     {
         "id": "02",
-        "title": "Project Two",
+        "title": "ASSASSINS",
         "description": "A brief description of Project Two.",
         "image": "path/to/image2.jpg",
-        "link": "https://example.com/project-two"
+        "link": "https://igme-202-2231.github.io/project-1-xentriom/"
     },
     {
         "id": "03",
-        "title": "Project Three",
+        "title": "Pokedex",
         "description": "A brief description of Project Three.",
         "image": "path/to/image3.jpg",
-        "link": "https://example.com/project-three"
+        "link": "https://people.rit.edu/jc5892/235/project2/"
     },
     {
         "id": "04",
-        "title": "Project Four",
+        "title": "Veggie Ninja",
         "description": "A brief description of Project Four.",
         "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
+        "link": "https://people.rit.edu/jc5892/235/project3/"
     },
     {
         "id": "05",
-        "title": "Project Four",
+        "title": "Penguin With a Hat",
         "description": "A brief description of Project Four.",
         "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
+        "link": "https://github.com/somedayvid/GameJam2023"
     },
     {
         "id": "06",
-        "title": "Project Four",
+        "title": "HoYoVista",
         "description": "A brief description of Project Four.",
         "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "07",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "08",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "09",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "10",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "11",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "12",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "13",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "14",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
-    },
-    {
-        "id": "15",
-        "title": "Project Four",
-        "description": "A brief description of Project Four.",
-        "image": "path/to/image4.jpg",
-        "link": "https://example.com/project-four"
+        "link": "https://discord.com/application-directory/1267369071444492309"
     }
 ]
