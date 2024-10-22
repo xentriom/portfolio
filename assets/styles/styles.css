@@ -27,9 +27,8 @@ html .nav-pills .nav-link {
     padding: 0.5rem 0.8rem;
 }
 
-html[data-bs-theme="light"] .nav-link.active#light-mode i,
-html[data-bs-theme="dark"] .nav-link.active#dark-mode i {
-    color: inherit;
+.nav-link#auto-mode.active i {
+    color: #67e378;
 }
 
 /* Light theme */
@@ -62,7 +61,7 @@ html[data-bs-theme="light"] .blurred-shape {
     animation: float 10s ease-in-out infinite;
 }
 
-html[data-bs-theme="light"] .nav-link#light-mode i {
+.nav-link#light-mode.active i {
     color: #f5b942;
 }
 
@@ -102,7 +101,7 @@ html[data-bs-theme="dark"] .blurred-shape {
     animation: float 10s ease-in-out infinite;
 }
 
-html[data-bs-theme="dark"] .nav-link#dark-mode i {
+.nav-link#dark-mode.active i {
     color: #67a1e3;
 }
 
