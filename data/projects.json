@@ -1,6 +1,8 @@
 [
     {
         "id": "01",
+        "inProgress": false,
+        "type": "University-Group",
         "title": "Dull Radiance",
         "description": "A brief description of Project One.",
         "image": "path/to/image1.jpg",
@@ -8,6 +10,8 @@
     },
     {
         "id": "02",
+        "inProgress": false,
+        "type": "University",
         "title": "ASSASSINS",
         "description": "A brief description of Project Two.",
         "image": "path/to/image2.jpg",
@@ -15,6 +19,8 @@
     },
     {
         "id": "03",
+        "inProgress": false,
+        "type": "University",
         "title": "Pokedex",
         "description": "A brief description of Project Three.",
         "image": "path/to/image3.jpg",
@@ -22,6 +28,8 @@
     },
     {
         "id": "04",
+        "inProgress": false,
+        "type": "University",
         "title": "Veggie Ninja",
         "description": "A brief description of Project Four.",
         "image": "path/to/image4.jpg",
@@ -29,6 +37,8 @@
     },
     {
         "id": "05",
+        "inProgress": false,
+        "type": "Event-Group",
         "title": "Penguin With a Hat",
         "description": "A brief description of Project Four.",
         "image": "path/to/image4.jpg",
@@ -36,9 +46,20 @@
     },
     {
         "id": "06",
+        "inProgress": true,
+        "type": "Personal",
         "title": "HoYoVista",
         "description": "A brief description of Project Four.",
         "image": "path/to/image4.jpg",
         "link": "https://discord.com/application-directory/1267369071444492309"
+    },
+    {
+        "id": "07",
+        "inProgress": true,
+        "type": "University-Group",
+        "title": "ENTROPY",
+        "description": "A brief description of Project Four.",
+        "image": "path/to/image4.jpg",
+        "link": "https://github.com/xentriom/ENTROPY"
     }
 ]
