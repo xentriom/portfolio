@@ -4,62 +4,122 @@
         "inProgress": false,
         "type": "University-Group",
         "title": "Dull Radiance",
-        "description": "A brief description of Project One.",
+        "description": "A 2D maze game, developed using MonoGame. Navigate through the maze and find the exit.",
         "image": "path/to/image1.jpg",
-        "link": "https://github.com/somedayvid/Dull-Radiance"
+        "link": "https://github.com/somedayvid/Dull-Radiance",
+        "tags": [
+            "MonoGame",
+            "C#"
+        ]
     },
     {
         "id": "02",
         "inProgress": false,
         "type": "University",
         "title": "ASSASSINS",
-        "description": "A brief description of Project Two.",
+        "description": "A 2D platformer game developed in Unity. Play as an assassin and eliminate your enemies.",
         "image": "path/to/image2.jpg",
-        "link": "https://igme-202-2231.github.io/project-1-xentriom/"
+        "link": "https://igme-202-2231.github.io/project-1-xentriom/",
+        "tags": [
+            "Unity",
+            "C#"
+        ]
     },
     {
         "id": "03",
         "inProgress": false,
         "type": "University",
         "title": "Pokedex",
-        "description": "A brief description of Project Three.",
+        "description": "A web application that allows users to search for and view information about Pokemon.",
         "image": "path/to/image3.jpg",
-        "link": "https://people.rit.edu/jc5892/235/project2/"
+        "link": "https://people.rit.edu/jc5892/235/project2/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "API"
+        ]
     },
     {
         "id": "04",
         "inProgress": false,
         "type": "University",
         "title": "Veggie Ninja",
-        "description": "A brief description of Project Four.",
+        "description": "A 2D web game developed using Phaser.",
         "image": "path/to/image4.jpg",
-        "link": "https://people.rit.edu/jc5892/235/project3/"
+        "link": "https://people.rit.edu/jc5892/235/project3/",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Phaser3"
+        ]
     },
     {
         "id": "05",
         "inProgress": false,
         "type": "Event-Group",
         "title": "Penguin With a Hat",
-        "description": "A brief description of Project Four.",
+        "description": "A 2D survival game developed in Unity as part of the 45h RIT GDC Halloween Game Jam in 2023.",
         "image": "path/to/image4.jpg",
-        "link": "https://github.com/somedayvid/GameJam2023"
+        "link": "https://github.com/somedayvid/GameJam2023",
+        "tags": [
+            "Unity",
+            "C#"
+        ]
     },
     {
         "id": "06",
         "inProgress": true,
         "type": "Personal",
         "title": "HoYoVista",
-        "description": "A brief description of Project Four.",
+        "description": "A Node.js Discord bot that provides game data and information for games developed by HoYoverse. View player stats, character builds, and more.",
         "image": "path/to/image4.jpg",
-        "link": "https://discord.com/application-directory/1267369071444492309"
+        "link": "https://discord.com/application-directory/1267369071444492309",
+        "tags": [
+            "Node.js",
+            "Discord.js",
+            "API"
+        ]
     },
     {
         "id": "07",
+        "inProgress": false,
+        "type": "Work",
+        "title": "ChangelingVR Bot",
+        "description": "A Discord bot that manages the community server as well as provide information about ChangelingVR.",
+        "image": "path/to/image4.jpg",
+        "link": "https://www.discord.gg/btEUjqazvP",
+        "tags": [
+            "Node.js",
+            "Discord.js"
+        ]
+    },
+    {
+        "id": "08",
         "inProgress": true,
         "type": "University-Group",
         "title": "ENTROPY",
-        "description": "A brief description of Project Four.",
+        "description": "A 3D horror-narrative game developed in Unity. Explore and uncover the truth behind the crew's disappearance.",
         "image": "path/to/image4.jpg",
-        "link": "https://github.com/xentriom/ENTROPY"
+        "link": "https://github.com/xentriom/ENTROPY",
+        "tags": [
+            "Unity",
+            "C#"
+        ]
+    },
+    {
+        "id": "09",
+        "inProgress": false,
+        "type": "University",
+        "title": "Audio Visualizer",
+        "description": "A web application that visualizes audio input using the Web Audio API.",
+        "image": "path/to/image4.jpg",
+        "link": "https://github.com/xentriom/IGME-330/tree/main/chen-j-hw2",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
     }
 ]

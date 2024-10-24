@@ -1,21 +1,13 @@
 .card {
     border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card {
-    max-width: 300px;
-}
-
-.card img {
     max-width: 100%;
-    height: 90%;
-    border-radius: 8px 0 0 8px;
-}
-
-.card-body {
-    padding: 10px;
+    margin-bottom: 15px;
 }
 
 .card-title {
@@ -24,34 +16,47 @@
 }
 
 .card-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 10px;
+    flex-grow: 1;
 }
 
 .btn-sm {
-    padding: 3px 8px;
     font-size: 0.8rem;
+    align-self: center;
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+
+#projects-container .card {
+    flex: 1 1 calc(33.333% - 15px);
+    max-width: calc(33.333% - 15px);
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 10px;
 }
 
 #projects-container {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-}
-
-#projects-container .card {
-    flex: 1 1 calc(33.333% - 15px);
-    box-sizing: border-box;
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
-    #projects-container .card {
-        flex: 1 1 calc(50% - 15px);
-    }
-}
-
-@media (max-width: 480px) {
-    #projects-container .card {
-        flex: 1 1 100%;
+    .card {
+        margin-bottom: 15px;
     }
 }
