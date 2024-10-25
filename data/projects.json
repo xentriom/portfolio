@@ -5,7 +5,7 @@
         "type": "University-Group",
         "title": "Dull Radiance",
         "description": "A 2D maze game, developed using MonoGame. Navigate through the maze and find the exit.",
-        "image": "assets/images/Dull Radiance.webp",
+        "image": "assets/images/projects/Dull Radiance.webp",
         "link": "https://github.com/somedayvid/Dull-Radiance",
         "tags": [
             "MonoGame",
@@ -18,7 +18,7 @@
         "type": "University",
         "title": "ASSASSINS",
         "description": "A 2D platformer game developed in Unity. Play as an assassin and eliminate your enemies.",
-        "image": "assets/images/ASSASSINS.webp",
+        "image": "assets/images/projects/ASSASSINS.webp",
         "link": "https://igme-202-2231.github.io/project-1-xentriom/",
         "tags": [
             "Unity",
@@ -31,7 +31,7 @@
         "type": "University",
         "title": "Pokepedia",
         "description": "A web application that allows users to search for and view information about Pokemon.",
-        "image": "assets/images/Pokepedia.webp",
+        "image": "assets/images/projects/Pokepedia.webp",
         "link": "https://people.rit.edu/jc5892/235/project2/",
         "tags": [
             "HTML",
@@ -46,7 +46,7 @@
         "type": "University",
         "title": "Veggie Ninja",
         "description": "A 2D web game developed using Phaser. It is a clone of the popular mobile game Fruit Ninja.",
-        "image": "assets/images/Veggie Ninja.webp",
+        "image": "assets/images/projects/Veggie Ninja.webp",
         "link": "https://people.rit.edu/jc5892/235/project3/",
         "tags": [
             "HTML",
@@ -61,7 +61,7 @@
         "type": "Event-Group",
         "title": "Penguin With a Hat",
         "description": "A 2D survival game developed in Unity as part of the 45h RIT GDC Halloween Game Jam in 2023.",
-        "image": "assets/images/Penguin With A Hat.webp",
+        "image": "assets/images/projects/Penguin With A Hat.webp",
         "link": "https://github.com/somedayvid/GameJam2023",
         "tags": [
             "Unity",
@@ -74,7 +74,7 @@
         "type": "Personal",
         "title": "HoYoVista",
         "description": "A Node.js Discord bot that provides game data and information for games developed by HoYoverse. View player stats, character builds, and more.",
-        "image": "assets/images/HoYoVista.webp",
+        "image": "assets/images/projects/HoYoVista.webp",
         "link": "https://discord.com/application-directory/1267369071444492309",
         "tags": [
             "JavaScript",
@@ -91,7 +91,7 @@
         "type": "Personal",
         "title": "Personal Website",
         "description": "A personal website that showcases my projects, skills, and experiences.",
-        "image": "assets/images/Portfolio.webp",
+        "image": "assets/images/projects/Portfolio.webp",
         "link": "",
         "tags": [
             "HTML",
@@ -133,7 +133,7 @@
         "type": "University",
         "title": "Audio Visualizer",
         "description": "A web application that visualizes audio input using the Web Audio API.",
-        "image": "assets/images/Audio Visualizer.webp",
+        "image": "assets/images/projects/Audio Visualizer.webp",
         "link": "https://github.com/xentriom/IGME-330/tree/main/chen-j-hw2",
         "tags": [
             "HTML",
