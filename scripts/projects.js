@@ -19,7 +19,7 @@ const renderProjects = async () => {
 
     projects.forEach(project => {
         const projectCard = document.createElement('div');
-        projectCard.classList.add('card', 'mb-3', 'project-card');
+        projectCard.classList.add('card', 'project-card');
         projectCard.style.width = '100%';
 
         projectCard.innerHTML = createProjectContainer(project);

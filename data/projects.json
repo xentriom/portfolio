@@ -87,6 +87,21 @@
     },
     {
         "id": "07",
+        "inProgress": true,
+        "type": "Personal",
+        "title": "Personal Website",
+        "description": "A personal website that showcases my projects, skills, and experiences.",
+        "image": "assets/images/Portfolio.webp",
+        "link": "",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap"
+        ]
+    },
+    {
+        "id": "08",
         "inProgress": false,
         "type": "Work",
         "title": "ChangelingVR Bot",
@@ -100,7 +115,7 @@
         ]
     },
     {
-        "id": "08",
+        "id": "09",
         "inProgress": true,
         "type": "University-Group",
         "title": "ENTROPY",
@@ -113,7 +128,7 @@
         ]
     },
     {
-        "id": "09",
+        "id": "10",
         "inProgress": false,
         "type": "University",
         "title": "Audio Visualizer",
