@@ -106,7 +106,7 @@
         "type": "Work",
         "title": "ChangelingVR Bot",
         "description": "A Discord bot that manages the community server as well as provide information about ChangelingVR.",
-        "image": "path/to/image4.jpg",
+        "image": "assets/images/projects/Portfolio.webp",
         "link": "https://www.discord.gg/btEUjqazvP",
         "tags": [
             "JavaScript",
@@ -120,7 +120,7 @@
         "type": "University-Group",
         "title": "ENTROPY",
         "description": "A 3D horror-narrative game developed in Unity. Explore and uncover the truth behind the crew's disappearance.",
-        "image": "path/to/image4.jpg",
+        "image": "assets/images/projects/Portfolio.webp",
         "link": "https://github.com/xentriom/ENTROPY",
         "tags": [
             "Unity",
