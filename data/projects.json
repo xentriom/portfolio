@@ -32,7 +32,7 @@
         "title": "Pokepedia",
         "description": "A web application that allows users to search for and view information about Pokemon.",
         "image": "assets/images/projects/Pokepedia.webp",
-        "link": "https://people.rit.edu/jc5892/235/project2/",
+        "link": "https://github.com/xentriom/IGME-235/tree/main/235/project2",
         "tags": [
             "HTML",
             "CSS",
@@ -47,7 +47,7 @@
         "title": "Veggie Ninja",
         "description": "A 2D web game developed using Phaser. It is a clone of the popular mobile game Fruit Ninja.",
         "image": "assets/images/projects/Veggie Ninja.webp",
-        "link": "https://people.rit.edu/jc5892/235/project3/",
+        "link": "https://github.com/xentriom/IGME-235/tree/main/235/project3",
         "tags": [
             "HTML",
             "CSS",
@@ -92,7 +92,7 @@
         "title": "Personal Website",
         "description": "A personal website that showcases my projects, skills, and experiences.",
         "image": "assets/images/projects/Portfolio.webp",
-        "link": "",
+        "link": "https://github.com/xentriom/portfolio",
         "tags": [
             "HTML",
             "CSS",
@@ -134,7 +134,7 @@
         "title": "Audio Visualizer",
         "description": "A web application that visualizes audio input using the Web Audio API.",
         "image": "assets/images/projects/Audio Visualizer.webp",
-        "link": "https://github.com/xentriom/IGME-330/tree/main/chen-j-hw2",
+        "link": "https://github.com/xentriom/IGME-330/tree/main/Hw/chen-j-hw2",
         "tags": [
             "HTML",
             "CSS",
