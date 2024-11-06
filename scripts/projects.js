@@ -51,13 +51,11 @@ const fetchProjects = async () => {
 const createProjectContainer = (project) => {
     return `
         <div class="row g-1">
-            ${project.image ? `
-                <div class="col-md-4 d-flex flex-column align-items-center">
-                    <img src="${project.image}" class="img-fluid rounded-start" alt="${project.title} logo">
-                    <a href="${project.link}" class="btn btn-primary btn-sm" target="_blank">Visit GitHub</a>
-                </div>
-            ` : ''}
-            <div class="col-md-${project.image ? '8' : '12'}">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <img src="${project.image}" class="img-fluid rounded-start" alt="${project.title} logo">
+                <a href="${project.link}" class="btn btn-primary btn-sm" target="_blank">View on GitHub</a>
+            </div>
+            <div class="col-md-8">
                 <div class="card-body">
                     <h6 class="card-title">${project.title}</h6>
                     <div class="project-tags">
