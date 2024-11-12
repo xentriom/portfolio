@@ -134,11 +134,11 @@
         "title": "Audio Visualizer",
         "description": "A web application that visualizes audio input using the Web Audio API.",
         "image": "assets/images/projects/Audio Visualizer.webp",
-        "link": "https://github.com/xentriom/IGME-330/tree/main/Hw/chen-j-hw2",
+        "link": "https://github.com/xentriom/IGME-330/tree/main/Hw/chen-j-hw3-refactor",
         "tags": [
             "HTML",
-            "CSS",
-            "JavaScript"
+            "Bulma CSS",
+            "TypeScript"
         ]
     },
     {
@@ -148,7 +148,7 @@
         "title": "Unity Test Projects",
         "description": "A collection of Unity projects that I use to test and learn new features and mechanics. All Unity related projects will be stored here including a build of the project.",
         "image": "",
-        "link": "https://github.com/xentriom/UE6TestRepo",
+        "link": "https://github.com/xentriom/UnityTestRepo",
         "tags": [
             "Unity",
             "C#"
