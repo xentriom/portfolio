@@ -102,37 +102,6 @@
     },
     {
         "id": "08",
-        "inProgress": false,
-        "type": "Work",
-        "title": "ChangelingVR Bot",
-        "description": "Worked on a Discord bot that manages the community server as well as provide information about ChangelingVR.",
-        "image": "",
-        "link": "https://www.discord.gg/btEUjqazvP",
-        "tags": [
-            "JavaScript",
-            "Node.js",
-            "Discord.js"
-        ]
-    },
-    {
-        "id": "09",
-        "inProgress": true,
-        "type": "Work",
-        "title": "ChangelingVR",
-        "description": "Worked on the main website for Changeling. ",
-        "image": "",
-        "link": "https://www.discord.gg/btEUjqazvP",
-        "tags": [
-            "HTML",
-            "JavaScript",
-            "CSS",
-            "Node.js",
-            "MySQL",
-            "Vue"
-        ]
-    },
-    {
-        "id": "10",
         "inProgress": true,
         "type": "University-Group",
         "title": "ENTROPY",
@@ -145,7 +114,7 @@
         ]
     },
     {
-        "id": "11",
+        "id": "09",
         "inProgress": false,
         "type": "University",
         "title": "Audio Visualizer",
@@ -159,7 +128,7 @@
         ]
     },
     {
-        "id": "12",
+        "id": "10",
         "inProgress": true,
         "type": "Personal",
         "title": "Unity Test Projects",
@@ -172,12 +141,12 @@
         ]
     },
     {
-        "id": "13",
+        "id": "11",
         "inProgress": true,
         "type": "Personal",
         "title": "Discord Unveiled",
         "description": "A web application that displays your data in a modern and clean way.",
-        "image": "",
+        "image": "assets/images/projects/Discord Unveiled.webp",
         "link": "https://people.rit.edu/jc5892/p/du/",
         "tags": [
             "HTML",
@@ -186,6 +155,20 @@
             "React",
             "Vite",
             "API"
+        ]
+    },
+    {
+        "id": "12",
+        "inProgress": true,
+        "type": "Personal",
+        "title": "Clicker",
+        "description": "A MacOS application that allows you to click your mouse at a set interval.",
+        "image": "assets/images/projects/Clicker.webp",
+        "link": "https://github.com/xentriom/Clicker",
+        "tags": [
+            "MacOS",
+            "Swift",
+            "Xcode"
         ]
     }
 ]
