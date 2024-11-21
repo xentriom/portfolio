@@ -162,11 +162,11 @@
         "inProgress": true,
         "type": "Personal",
         "title": "Clicker",
-        "description": "A MacOS application that allows you to click your mouse at a set interval.",
+        "description": "A macOS application that automates mouse clicks at customizable intervals. Features an intuitive GUI for personalization, a convenient menu bar icon for quick access, and support for saving persistent settings.",
         "image": "assets/images/projects/Clicker.webp",
         "link": "https://github.com/xentriom/Clicker",
         "tags": [
-            "MacOS",
+            "macOS",
             "Swift",
             "Xcode"
         ]
