@@ -43,6 +43,31 @@
     flex-grow: 1;
 }
 
+/* Button styling */
+html[data-bs-theme="light"] #button {
+    background-color: #cbcbcb;
+    border-color: #000;
+    color: #333;
+}
+
+html[data-bs-theme="light"] #button:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #cbcbcb;
+}
+
+html[data-bs-theme="dark"] #button {
+    background-color: #6c757d;
+    border-color: #000;
+    color: #f8f9fa;
+}
+
+html[data-bs-theme="dark"] #button:hover {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #000;
+}
+
 .btn-sm {
     font-size: 0.8rem;
     align-self: center;

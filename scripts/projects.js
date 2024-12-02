@@ -53,7 +53,7 @@ const createProjectContainer = (project) => {
         <div class="row g-1">
             <div class="col-md-4 d-flex flex-column align-items-center">
                 <img src="${project.image}" class="img-fluid rounded-start" alt="${project.title} logo">
-                <a href="${project.link}" class="btn btn-primary btn-sm" target="_blank">View on GitHub</a>
+                <a href="${project.link}" id="button" class="btn btn-primary btn-sm" target="_blank">View on GitHub</a>
             </div>
             <div class="col-md-8">
                 <div class="card-body">
