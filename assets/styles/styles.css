@@ -8,12 +8,14 @@
     padding: 1rem 0;
 }
 
-.main-nav .nav-pills, .display-nav .nav-pills {
+.main-nav .nav-pills,
+.display-nav .nav-pills {
     display: flex;
     justify-content: center;
 }
 
-.main-nav .nav-item, .display-nav .nav-item {
+.main-nav .nav-item,
+.display-nav .nav-item {
     flex: 0 0 auto;
 }
 
@@ -129,7 +131,9 @@ html[data-bs-theme="dark"] .blurred-shape {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
 
