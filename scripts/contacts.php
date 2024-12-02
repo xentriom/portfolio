@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Prepare the email content
-    $email_body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+    $email_body = "Name: $name [$email]\n\n$message";
 
     // Send the email
     if (mail($recipient_email, $subject, $email_body)) {
