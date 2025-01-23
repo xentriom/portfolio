@@ -38,7 +38,6 @@ export default [
   {
     files: ['**/*.{js,jsx}'],
     rules: {
-      // Disables ESLint rules that conflict with Prettier
       ...prettier.rules,
     },
   },
