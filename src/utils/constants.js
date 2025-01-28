@@ -1,5 +1,6 @@
 export const PersonalInfo = Object.freeze({
-  Name: 'Jason Chen',
+  Name: 'Jason',
+  FullName: 'Jason Chen',
   Email: 'jc5892@rit.edu',
   Education: 'Rochester Institute of Technology',
   Location: 'Rochester, NY',

@@ -5,7 +5,7 @@ const Header = () => {
     <header className="w-full max-w-2xl bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6 rounded-b-lg shadow-lg">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
         <div className="space-y-2">
-          <h1 className="text-3xl font-bold tracking-tight">{PersonalInfo.Name}</h1>
+          <h1 className="text-3xl font-bold tracking-tight">{PersonalInfo.FullName}</h1>
           <p className="text-gray-300 font-medium">{PersonalInfo.Education}</p>
         </div>
 
