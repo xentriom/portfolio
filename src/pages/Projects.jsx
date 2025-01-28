@@ -1,5 +1,12 @@
+import { useTitle } from '../hooks/useTitle';
+
 const Projects = () => {
-  return <p>Projects content.</p>;
+  useTitle('Projects');
+  return (
+    <main className=" w-full max-w-2xl mt-4 mb-4">
+      <p>Project content.</p>
+    </main>
+  );
 };
 
 export default Projects;
