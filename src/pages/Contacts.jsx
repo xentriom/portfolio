@@ -1,6 +1,6 @@
 import { useTitle } from '../hooks/useTitle';
 
-const Contact = () => {
+const Contacts = () => {
   useTitle('Contact');
   return (
     <main className=" w-full max-w-2xl mt-4 mb-4">
@@ -9,4 +9,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

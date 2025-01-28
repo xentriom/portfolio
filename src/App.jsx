@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
-const Contact = lazy(() => import('./pages/Contact'));
+const Contacts = lazy(() => import('./pages/Contacts'));
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </Suspense>
       <Footer />

@@ -8,5 +8,5 @@ export const PersonalInfo = Object.freeze({
 export const NavItems = Object.freeze([
   { name: 'Home', href: '/' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Contacts', href: '/contacts' },
 ]);
