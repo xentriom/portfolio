@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /~jc5892/portfolio/v2/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /~jc5892/portfolio/v2/index.html [L]
