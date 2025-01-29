@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { collection, onSnapshot } from 'firebase/firestore';
-import { db } from '../utils/firebase';
+import { getFirestoreInstance } from '../utils/firebase';
 
 export const useProject = () => {
   const [projects, setProjects] = useState([]);
@@ -8,23 +8,39 @@ export const useProject = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const unsubscribe = onSnapshot(
-      collection(db, 'projects'),
-      (querySnapshot) => {
-        const projectsData = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        setProjects(projectsData);
-        setLoading(false);
-      },
-      (err) => {
+    let unsubscribe;
+
+    const fetchFirestore = async () => {
+      try {
+        const db = await getFirestoreInstance();
+        unsubscribe = onSnapshot(
+          collection(db, 'projects'),
+          (querySnapshot) => {
+            const projectsData = querySnapshot.docs.map((doc) => ({
+              id: doc.id,
+              ...doc.data(),
+            }));
+            setProjects(projectsData);
+            setLoading(false);
+          },
+          (err) => {
+            setError(err.message);
+            setLoading(false);
+          }
+        );
+      } catch (err) {
         setError(err.message);
         setLoading(false);
       }
-    );
+    };
 
-    return () => unsubscribe();
+    fetchFirestore();
+
+    return () => {
+      if (unsubscribe) {
+        unsubscribe();
+      }
+    };
   }, []);
 
   return { projects, loading, error };

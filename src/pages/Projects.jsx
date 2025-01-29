@@ -7,9 +7,7 @@ const Projects = () => {
   const { projects, loading, error } = useProject();
 
   if (loading) {
-    return (
-      <Loading />
-    );
+    return <Loading />;
   }
 
   if (error) {

@@ -1,6 +1,4 @@
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -13,7 +11,13 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const analytics = getAnalytics(app);
-export const db = getFirestore(app);
+let firestoreInstance = null;
+export const getFirestoreInstance = async () => {
+  if (!firestoreInstance) {
+    const { getFirestore } = await import('firebase/firestore');
+    firestoreInstance = getFirestore(app);
+  }
+  return firestoreInstance;
+};
 
 export default app;
