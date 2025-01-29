@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { PersonalInfo } from '../utils/constants';
 
-const Header = () => {
+const Header = memo(function Header() {
   return (
     <header className="w-full max-w-2xl bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6 rounded-b-lg shadow-lg">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
@@ -37,6 +38,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+});
 
 export default Header;

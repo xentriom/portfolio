@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavItems } from '../utils/constants';
 
-const NavBar = () => {
+const NavBar = memo(function NavBar() {
   return (
     <nav className="w-full max-w-2xl flex space-x-4">
       {NavItems.map((item) => (
@@ -19,6 +20,6 @@ const NavBar = () => {
       ))}
     </nav>
   );
-};
+});
 
 export default NavBar;
