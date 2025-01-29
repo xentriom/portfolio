@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { useFirebasePageTracking } from './hooks/useFirebaseTracking';
+import { useFirebaseTracking } from './hooks/useFirebaseTracking';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Loading from './components/Loading';
@@ -11,7 +11,7 @@ const Projects = lazy(() => import('./pages/Projects'));
 const Contacts = lazy(() => import('./pages/Contacts'));
 
 function App() {
-  useFirebasePageTracking();
+  useFirebaseTracking();
 
   return (
     <div className="min-h-screen flex flex-col items-center">

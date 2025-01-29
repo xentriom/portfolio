@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { collection, onSnapshot } from 'firebase/firestore';
 import { getFirestoreInstance } from '../utils/firebase';
 
+/**
+ * Hook to fetch projects from Firestore
+ * @returns {Object} projects - The list of projects
+ */
 export const useProject = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
