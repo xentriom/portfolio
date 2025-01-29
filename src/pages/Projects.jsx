@@ -1,4 +1,5 @@
 import Loading from '../components/Loading';
+import Error from '../components/Error';
 import { useProject } from '../hooks/useProject';
 
 const Projects = () => {
@@ -9,11 +10,7 @@ const Projects = () => {
   }
 
   if (error) {
-    return (
-      <div className="w-full max-w-2xl mt-4 mb-4">
-        <p className="text-red-500">{error}</p>
-      </div>
-    );
+    return <Error message={error} />;
   }
 
   return (
