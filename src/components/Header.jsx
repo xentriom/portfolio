@@ -12,7 +12,14 @@ const Header = memo(function Header() {
 
         <div className="mt-4 md:mt-0 flex flex-col items-start md:items-end space-y-1">
           <div className="flex items-center space-x-2">
-            <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-4 h-4 text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-label="Email icon"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -23,7 +30,14 @@ const Header = memo(function Header() {
             <span className="text-gray-300">{PersonalInfo.Email}</span>
           </div>
           <div className="flex items-center space-x-2">
-            <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-4 h-4 text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-label="Location icon"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

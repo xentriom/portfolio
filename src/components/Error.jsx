@@ -9,6 +9,8 @@ const Error = ({ message }) => {
         stroke="currentColor"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Error icon"
       >
         <path
           strokeLinecap="round"
