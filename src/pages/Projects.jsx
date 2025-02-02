@@ -16,9 +16,7 @@ const Projects = () => {
   return (
     <>
       <title>Projects | Jason</title>
-      <main className=" w-full max-w-2xl mt-4 mb-4">
-        <p>Projects in database: {projects.length}</p>
-      </main>
+      <p>Projects in database: {projects.length}</p>
     </>
   );
 };

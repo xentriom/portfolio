@@ -17,13 +17,15 @@ function App() {
     <div className="min-h-screen flex flex-col items-center">
       <Header />
       <NavBar />
-      <Suspense fallback={<Loading />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Routes>
-      </Suspense>
+      <main className="w-full max-w-2xl flex-grow flex flex-col mb-4 p-6  bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-b-lg shadow-lg">
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contacts" element={<Contacts />} />
+          </Routes>
+        </Suspense>
+      </main>
       <Footer />
     </div>
   );
