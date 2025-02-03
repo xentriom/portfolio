@@ -1,22 +1,12 @@
 import { memo } from 'react';
-import { NavLink } from 'react-router-dom';
 import { NavItems } from '../utils/constants';
+import NavTab from './NavTab';
 
 const NavBar = memo(function NavBar() {
   return (
-    <nav className="w-full max-w-2xl flex space-x-4">
+    <nav className="w-full max-w-2xl flex rounded-t-lg bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm">
       {NavItems.map((item) => (
-        <NavLink
-          key={item.href}
-          to={item.href}
-          className={({ isActive }) =>
-            `px-3 py-2 text-sm font-medium transition duration-200 ${
-              isActive ? 'bg-blue-500 text-white' : 'text-gray-700 hover:bg-gray-100'
-            }`
-          }
-        >
-          {item.name}
-        </NavLink>
+        <NavTab key={item.href} to={item.href} name={item.name} />
       ))}
     </nav>
   );
