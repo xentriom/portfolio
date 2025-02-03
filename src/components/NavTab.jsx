@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const NavTab = ({ to, name }) => {
   return (
@@ -13,6 +14,11 @@ const NavTab = ({ to, name }) => {
       {name}
     </NavLink>
   );
+};
+
+NavTab.propTypes = {
+  to: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default NavTab;
