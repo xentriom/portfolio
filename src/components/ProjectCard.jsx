@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 const ProjectCard = ({ project, view }) => {
   return (
     <div
-      className={`transition-transform duration-300 hover:scale-102 rounded-lg shadow-lg backdrop-blur-xs border-1 border-blue-400/40 ${
+      className={`transition-transform duration-300 hover:scale-102 rounded-lg shadow-lg backdrop-blur-xs border-1 border-blue-400/40 cursor-pointer ${
         view === 'list' ? 'flex items-center gap-4' : 'text-center'
       }`}
+      onClick={() => window.open(project.url, '_blank')}
     >
       <img
         src={project.image || '/placeholder.jpg'}

@@ -48,13 +48,13 @@ const Projects = () => {
         <SearchInput value={search} onChange={handleSearchChange} />
         <div className="flex gap-2">
           <button
-            className={`p-2 rounded-lg ${view === 'list' ? 'bg-blue-500 text-white' : ''}`}
+            className={`p-2 rounded-lg cursor-pointer ${view === 'list' ? 'bg-blue-500 text-white' : ''}`}
             onClick={() => handleSetView('list')}
           >
             <MemoizedIcon Icon={List} />
           </button>
           <button
-            className={`p-2 rounded-lg ${view === 'grid' ? 'bg-blue-500 text-white' : ''}`}
+            className={`p-2 rounded-lg cursor-pointer ${view === 'grid' ? 'bg-blue-500 text-white' : ''}`}
             onClick={() => handleSetView('grid')}
           >
             <MemoizedIcon Icon={LayoutGrid} />
