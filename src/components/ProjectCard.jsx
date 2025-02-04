@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const ProjectCard = ({ project, view }) => {
   return (
     <div
-      className={`transition-transform duration-300 hover:scale-105 hover:rotate-1 rounded-lg shadow-lg bg-yellow-400 ${
+      className={`transition-transform duration-300 hover:scale-102 rounded-lg shadow-lg backdrop-blur-xs border-1 border-blue-400/40 ${
         view === 'list' ? 'flex items-center gap-4' : 'text-center'
       }`}
     >
