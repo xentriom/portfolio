@@ -1,15 +1,18 @@
 import PropTypes from 'prop-types';
 
-const ProjectCard = ({ project, view }) => {
+// ProjectCard component to display project cards
+// Used in Projects page to display projects
+// Formats depending on view (list or grid)
+const ProjectCard = ({ project, view, onClick }) => {
   return (
     <div
-      className={`transition-transform duration-300 hover:scale-102 rounded-lg shadow-lg backdrop-blur-xs border-1 border-blue-400/40 cursor-pointer ${
+      className={`transition-transform duration-300 hover:scale-103 rounded-lg shadow-lg backdrop-blur-xs border-1 border-blue-400 cursor-pointer ${
         view === 'list' ? 'flex items-center gap-4' : 'text-center'
       }`}
-      onClick={() => window.open(project.url, '_blank')}
+      onClick={onClick}
     >
       <img
-        src={project.image || '/placeholder.jpg'}
+        src={project.image || './icon.jpeg'}
         alt={project.name}
         className={`rounded-lg object-cover ${view === 'list' ? 'w-24 h-24' : 'w-full h-40'}`}
         loading="lazy"
@@ -25,6 +28,7 @@ const ProjectCard = ({ project, view }) => {
 ProjectCard.propTypes = {
   project: PropTypes.object.isRequired,
   view: PropTypes.oneOf(['list', 'grid']).isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ProjectCard;
