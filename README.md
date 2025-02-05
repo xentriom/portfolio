@@ -10,20 +10,20 @@
 
 ### Firestore Structure
 ```yml
-description: map  
-  long: string  
-  short: string  
-end_date: string (ISO format)  
-id: number  
-images: map  
-  bg: string  
-  icon: string  
-links: array  
-  type: string  
-  url: string  
-name: string  
-start_date: string (ISO format)  
-status: string  
-tags: array (strings)  
+description: map
+  long: string
+  short: string
+end_date: string (ISO format)
+id: number
+images: map
+  bg: string
+  icon: string
+links: array (map)
+  type: string
+  url: string
+name: string
+start_date: string (ISO format)
+status: string
+tags: array (string)
 type: string
 ```
