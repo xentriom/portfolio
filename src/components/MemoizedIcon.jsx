@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import PropTypes from 'prop-types';
 
+// MemoizedIcon component for memoizing icons (Lucide)
 const MemoizedIcon = memo(function MemoizedIcon({ Icon, size = 20, className = '' }) {
   return <Icon size={size} className={className} />;
 });

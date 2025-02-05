@@ -1,3 +1,4 @@
+// Loading component for Suspense fallback and loading states
 const Loading = () => {
   return (
     <div className="flex justify-center flex-col items-center flex-grow">

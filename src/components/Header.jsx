@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { Mail, MapPin } from 'lucide-react';
 import { PersonalInfo } from '../utils/constants';
 
+// Header component for displaying personal information
 const Header = memo(function Header() {
   return (
     <header className="w-full max-w-2xl bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm text-white p-6 rounded-b-lg shadow-lg mb-4 cursor-default">

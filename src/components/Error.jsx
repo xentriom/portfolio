@@ -1,6 +1,7 @@
 import { TriangleAlert } from 'lucide-react';
 import PropTypes from 'prop-types';
 
+// Error component for displaying error messages
 const Error = ({ message }) => {
   return (
     <div className="flex bg-red-50 border border-red-200 rounded-lg p-4">
