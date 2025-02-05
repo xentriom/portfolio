@@ -13,5 +13,5 @@ export const useFirebaseTracking = () => {
     logEvent(analytics, 'screen_view', {
       screen_name: location.pathname,
     });
-  }, [location]);
+  }, [location.pathname]);
 };
