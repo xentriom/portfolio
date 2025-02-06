@@ -2,10 +2,11 @@
 
 ### Building and Deploying for RIT domain
 
-1. Remove React Scan from `index.html`.
-2. Configure BrowserRouter: Add `basename="/jc5892/portfolio/v2/"` in main.jsx.
-3. Build the project: `npm run build`
-4. Modify asset paths in `dist/index.html` and `dist/assets/index-[].js`:
+1. Uncomment and use import.meta.env instead of process.env
+2. Remove React Scan from `index.html`.
+3. Configure BrowserRouter: Add `basename="/jc5892/portfolio/v2/"` in main.jsx.
+4. Build the project: `npm run build`
+5. Modify asset paths in `dist/index.html` and `dist/assets/index-[].js`:
    - Prefix /assets with .
 
 ### Firestore Structure
