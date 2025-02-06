@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://jc5892.vercel.app/sitemap.xml
