@@ -1,7 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useFirebaseTracking } from './hooks/useFirebaseTracking';
-import Footer from './components/Footer';
 import Header from './components/Header';
 import Loading from './components/Loading';
 import NavBar from './components/NavBar';
@@ -26,7 +25,6 @@ function App() {
           </Routes>
         </Suspense>
       </main>
-      {/* <Footer /> */}
     </div>
   );
 }

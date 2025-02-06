@@ -22,7 +22,7 @@ const Header = memo(function Header() {
   return (
     <header className="w-full max-w-2xl bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm text-white py-2 rounded-b-lg shadow-lg mb-4 cursor-default">
       <div className="flex items-center justify-center">
-        <img src={'./assets/initial.png'} alt="J" className="w-12 h:12 md:w-24 md:h-24" />
+        <img src={'./assets/initial.png'} alt="J" className="w-12 h:12 md:w-18 md:h-18" />
         <h1 className="font-bold tracking-tight -ml-1 md:text-3xl md:-ml-3">{PersonalInfo.FullName.slice(1)}</h1>
       </div>
     </header>
