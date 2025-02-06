@@ -74,7 +74,7 @@ const Projects = () => {
       </div>
 
       {/* Project Display */}
-      <div className="max-h-[calc(100vh-280px)] overflow-y-auto">
+      <div className="max-h-[calc(100vh-280px)] overflow-y-auto scrollbar-hide">
         <AnimatePresence mode="wait">
           {filteredProjects.length > 0 ? (
             <motion.div

@@ -14,12 +14,14 @@ const ProjectCard = ({ project, view, onClick }) => {
       <img
         src={project.image || './icon.jpeg'}
         alt={project.name}
-        className={`rounded-lg object-cover ${view === 'list' ? 'w-24 h-24' : 'w-full h-40'}`}
+        className={`rounded-lg object-cover ${view === 'list' ? 'h-full w-24' : 'w-full h-40'}`}
         loading="lazy"
       />
       <div className={view === 'list' ? 'flex-1' : ''}>
         <h2 className="text-lg font-semibold">{project.name}</h2>
-        {view === 'list' && <p className="text-gray-500">{project.description?.short || 'No description found.'}</p>}
+        {view === 'list' && (
+          <p className="text-xs sm:text-base text-gray-500">{project.description?.short || 'No description found.'}</p>
+        )}
       </div>
     </div>
   );
