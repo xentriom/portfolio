@@ -74,7 +74,7 @@ const Projects = () => {
       </div>
 
       {/* Project Display */}
-      <div className="max-h-[calc(100vh-250px)] md:max-h-[calc(100vh-250px)] overflow-auto">
+      <div className="max-h-[calc(100vh-280px)] overflow-auto">
         <AnimatePresence mode="wait">
           {filteredProjects.length > 0 ? (
             <motion.div
