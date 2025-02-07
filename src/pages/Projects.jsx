@@ -51,9 +51,10 @@ const Projects = () => {
   return (
     <>
       <title>Projects | Jason</title>
+      <meta name="description" content="Hey, I'm Jason, a student at RIT. Check out these projects!" />
 
       {/* Search and View Controls */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex gap-5 items-center mb-6">
         <SearchInput value={search} onChange={handleSearchChange} />
         <div className="flex gap-2">
           <button

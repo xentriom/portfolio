@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 // SearchInput component for project searches
 const SearchInput = memo(function SearchInput({ value, onChange }) {
   return (
-    <div className="relative w-full max-w-lg">
+    <div className="relative w-full">
       <MemoizedIcon Icon={Search} className="absolute left-3 top-3 text-gray-400" />
       <input
         type="text"
