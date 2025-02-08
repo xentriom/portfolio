@@ -40,7 +40,7 @@ const ProjectPopup = ({ project, onClose }) => {
       >
         <motion.div
           key="popup"
-          className="bg-amber-600 rounded-lg shadow-lg relative max-w-lg w-full max-h overflow-auto"
+          className="bg-gray-800/95 backdrop-blur-lg rounded-lg shadow-xl border-gray-800 relative max-w-lg w-full max-h overflow-auto"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0 }}
@@ -55,7 +55,7 @@ const ProjectPopup = ({ project, onClose }) => {
             }}
           >
             <motion.button
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 bg-white p-1 rounded-full shadow-md"
+              className="absolute top-2 right-2 text-gray-200 bg-gray-800/95 backdrop-blur-lg p-1 rounded-full shadow-md"
               aria-label="Close Popup"
               onClick={onClose}
               whileHover={{ scale: 1.1 }}
@@ -97,7 +97,7 @@ const ProjectPopup = ({ project, onClose }) => {
                       transition={{ delay: 0.4, duration: 0.3 }}
                     >
                       {project.tags.map((tag) => (
-                        <span key={tag} className="p-1 px-2 bg-blue-500 text-white rounded-lg text-xs">
+                        <span key={tag} className="p-1 px-2 bg-indigo-400 text-gray-200 rounded-lg text-xs">
                           {tag}
                         </span>
                       ))}
@@ -109,7 +109,7 @@ const ProjectPopup = ({ project, onClose }) => {
 
             {/* Description */}
             <motion.p
-              className="text-gray-700"
+              className="text-gray-200"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.3 }}
@@ -131,7 +131,7 @@ const ProjectPopup = ({ project, onClose }) => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-1 px-2 bg-blue-500 rounded-lg shadow-md text-sm text-white hover:bg-blue-700"
+                    className="p-1 px-2 bg-indigo-400 rounded-lg shadow-md text-sm text-gray-200 hover:bg-indigo-500"
                   >
                     {link.type}
                   </a>

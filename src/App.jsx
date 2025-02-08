@@ -18,7 +18,7 @@ function App() {
     <div className="min-h-screen flex flex-col items-center">
       <Header />
       <NavBar />
-      <main className="w-full max-w-2xl flex flex-col flex-grow p-6 bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm text-white shadow-lg">
+      <main className="w-full max-w-2xl flex flex-col flex-grow p-6 bg-gradient-to-r from-gray-800 to-gray-900 text-gray-200 shadow-lg">
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Home />} />

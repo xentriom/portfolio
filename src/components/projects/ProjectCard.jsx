@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const ProjectCard = ({ project, view, onClick }) => {
   return (
     <div
-      className={`transition-transform duration-300 hover:scale-103 rounded-lg shadow-lg backdrop-blur-xs border-1 border-blue-400 cursor-pointer ${
+      className={`transition-transform duration-300 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-xl border-gray-700 hover:scale-103 cursor-pointer ${
         view === 'list' ? 'flex items-center gap-4' : 'text-center'
       }`}
       onClick={onClick}
@@ -20,7 +20,7 @@ const ProjectCard = ({ project, view, onClick }) => {
       <div className={view === 'list' ? 'flex-1' : ''}>
         <h2 className="text-lg font-semibold">{project.name}</h2>
         {view === 'list' && (
-          <p className="text-xs sm:text-base text-gray-500">{project.description?.short || 'No description found.'}</p>
+          <p className="text-xs sm:text-base text-gray-400">{project.description?.short || 'No description found.'}</p>
         )}
       </div>
     </div>

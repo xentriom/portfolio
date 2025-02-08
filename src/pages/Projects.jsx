@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useProject } from '../hooks/useProject';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
-import SearchBar from '../components/SearchBar';
-import ViewToggle from '../components/ViewToggle';
-import ProjectCard from '../components/ProjectCard';
-import ProjectPopup from '../components/ProjectPopup';
+import SearchBar from '../components/projects/SearchBar';
+import ViewToggle from '../components/projects/ViewToggle';
+import ProjectCard from '../components/projects/ProjectCard';
+import ProjectPopup from '../components/projects/ProjectPopup';
 
 const Projects = () => {
   const { projects, loading, error } = useProject();
@@ -89,7 +89,7 @@ const Projects = () => {
             </motion.div>
           ) : (
             <motion.p
-              className="text-center text-gray-500"
+              className="text-center text-gray-400"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
