@@ -34,7 +34,7 @@ const SocialTag = () => {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 hover:text-indigo-400 transition-colors duration-200 space-y-2"
+            className="flex items-center space-x-2 hover:text-indigo-700 transition-colors duration-200 space-y-2"
             aria-label={link.name}
           >
             {link.icon}
