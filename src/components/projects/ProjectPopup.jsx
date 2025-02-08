@@ -73,7 +73,7 @@ const ProjectPopup = ({ project, onClose }) => {
                 <motion.img
                   src={project.images?.icon || './icon.jpeg'}
                   alt={project.name}
-                  className="w-18 h-18 rounded-md shadow-md mr-3"
+                  className="w-18 h-18 rounded-md mr-3"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.3 }}
