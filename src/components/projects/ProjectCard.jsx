@@ -14,7 +14,7 @@ const ProjectCard = ({ project, view, onClick }) => {
       <img
         src={project.images?.icon || './icon.jpeg'}
         alt={project.name}
-        className={`rounded-lg object-cover ${view === 'list' ? 'h-full w-24' : 'w-full h-40'}`}
+        className={`rounded-lg object-cover ${view === 'list' ? 'h-24 w-24' : 'w-full h-40'}`}
         loading="lazy"
       />
       <div className={view === 'list' ? 'flex-1' : ''}>
