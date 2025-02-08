@@ -1,13 +1,12 @@
 import { useState, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useProject } from '../hooks/useProject';
-import { List, LayoutGrid } from 'lucide-react';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
-import SearchInput from '../components/SearchInput';
+import SearchBar from '../components/SearchBar';
+import ViewToggle from '../components/ViewToggle';
 import ProjectCard from '../components/ProjectCard';
 import ProjectPopup from '../components/ProjectPopup';
-import MemoizedIcon from '../components/MemoizedIcon';
 
 const Projects = () => {
   const { projects, loading, error } = useProject();
@@ -55,23 +54,8 @@ const Projects = () => {
 
       {/* Search and View Controls */}
       <div className="flex gap-5 items-center mb-6">
-        <SearchInput value={search} onChange={handleSearchChange} />
-        <div className="flex gap-2">
-          <button
-            className={`p-2 rounded-lg cursor-pointer ${view === 'list' ? 'bg-blue-400 text-white' : ''}`}
-            aria-label="List View"
-            onClick={() => handleSetView('list')}
-          >
-            <MemoizedIcon Icon={List} />
-          </button>
-          <button
-            className={`p-2 rounded-lg cursor-pointer ${view === 'grid' ? 'bg-blue-400 text-white' : ''}`}
-            aria-label="Grid View"
-            onClick={() => handleSetView('grid')}
-          >
-            <MemoizedIcon Icon={LayoutGrid} />
-          </button>
-        </div>
+        <SearchBar value={search} onChange={handleSearchChange} />
+        <ViewToggle view={view} setView={handleSetView} />
       </div>
 
       {/* Project Display */}

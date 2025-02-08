@@ -8,7 +8,7 @@ import NavTab from './NavTab';
 const NavBar = memo(function NavBar() {
   return (
     <motion.nav
-      className="w-full max-w-2xl flex rounded-t-lg bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-sm"
+      className="w-full max-w-2xl flex rounded-t-lg bg-gradient-to-r from-gray-800 to-gray-900"
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}

@@ -14,11 +14,11 @@ const Header = memo(function Header() {
 
         <div className="hidden md:flex mt-4 flex-col items-end space-y-1">
           <div className="flex items-center space-x-2">
-            <Mail size={16} className="text-blue-400" />
+            <Mail size={16} className="text-indigo-500" />
             <span className="text-gray-300 text-sm">{PersonalInfo.Email}</span>
           </div>
           <div className="flex items-center space-x-2">
-            <MapPin size={16} className="text-blue-400" />
+            <MapPin size={16} className="text-indigo-500" />
             <span className="text-gray-300 text-sm">{PersonalInfo.Location}</span>
           </div>
         </div>
