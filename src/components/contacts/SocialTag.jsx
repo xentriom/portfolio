@@ -4,22 +4,14 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 // SocialTag component for displaying social links
 const SocialTag = () => {
   const SocialLinks = [
-    { name: 'Email', href: 'mailto:c04jason@gmail.com', icon: <Mail size={20} className="text-indigo-400" /> },
+    { name: 'jc5892@rit.edu', href: 'mailto:jc5892@rit.edu', icon: <Mail size={20} /> },
     {
-      name: 'LinkedIn',
+      name: 'linkedin.com/in/jasonchen0080',
       href: 'https://linkedin.com/in/jasonchen0080',
-      icon: <Linkedin size={20} className="text-indigo-400" />,
+      icon: <Linkedin size={20} />,
     },
-    {
-      name: 'GitHub/xentriom',
-      href: 'https://github.com/xentriom',
-      icon: <Github size={20} className="text-indigo-400" />,
-    },
-    {
-      name: 'GitHub/ScobbleQ',
-      href: 'https://github.com/ScobbleQ',
-      icon: <Github size={20} className="text-indigo-400" />,
-    },
+    { name: 'github.com/xentriom', href: 'https://github.com/xentriom', icon: <Github size={20} /> },
+    { name: 'github.com/ScobbleQ', href: 'https://github.com/ScobbleQ', icon: <Github size={20} /> },
   ];
 
   return (
@@ -27,7 +19,7 @@ const SocialTag = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="p-4 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-xl border-gray-700 text-gray-200 mb-4"
+      className="p-4 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-xl border-gray-700 text-indigo-400 mb-4"
     >
       {SocialLinks.map((link, index) => (
         <li key={index}>

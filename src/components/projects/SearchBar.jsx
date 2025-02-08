@@ -14,7 +14,7 @@ const SearchBar = memo(function SearchInput({ value, onChange }) {
         placeholder="Search projects..."
         value={value}
         onChange={onChange}
-        className="pl-10 pr-4 py-2 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        className="pl-10 pr-4 py-2 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-700"
       />
     </div>
   );
