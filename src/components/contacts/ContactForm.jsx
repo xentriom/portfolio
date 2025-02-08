@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 
+// ContactForm component for displaying a contact form
 const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();

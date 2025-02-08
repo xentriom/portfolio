@@ -1,4 +1,3 @@
-import { motion } from 'motion/react';
 import SocialTag from '../components/contacts/SocialTag';
 import ContactForm from '../components/contacts/ContactForm';
 

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin } from 'lucide-react';
 
+// SocialTag component for displaying social links
 const SocialTag = () => {
   const SocialLinks = [
     { name: 'Email', href: 'mailto:c04jason@gmail.com', icon: <Mail size={20} className="text-indigo-400" /> },

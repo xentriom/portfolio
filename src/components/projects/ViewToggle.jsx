@@ -3,6 +3,8 @@ import { List, LayoutGrid } from 'lucide-react';
 import MemoizedIcon from '../MemoizedIcon';
 import PropTypes from 'prop-types';
 
+// ViewToggle component for toggling between list and grid view
+// Used in Projects page
 const ViewToggle = memo(function ViewToggle({ view, setView }) {
   return (
     <div className="flex gap-2">
