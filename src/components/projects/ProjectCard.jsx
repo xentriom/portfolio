@@ -12,7 +12,7 @@ const ProjectCard = ({ project, view, onClick }) => {
       onClick={onClick}
     >
       <img
-        src={project.image || './icon.jpeg'}
+        src={project.images?.icon || './icon.jpeg'}
         alt={project.name}
         className={`rounded-lg object-cover ${view === 'list' ? 'h-full w-24' : 'w-full h-40'}`}
         loading="lazy"
