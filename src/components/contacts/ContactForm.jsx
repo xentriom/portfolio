@@ -13,7 +13,7 @@ const ContactForm = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="p-4 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-lg border-gray-700"
+      className="p-4 glassmorph-700"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-grow gap-4 mb-4">

@@ -7,6 +7,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer components {
+  .glassmorph-700 {
+    @apply bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-lg border border-gray-700;
+  }
+  .glassmorph-800 {
+    @apply bg-gray-800/95 backdrop-blur-lg rounded-lg shadow-lg border border-gray-800;
+  }
+  .glassmorph-indigo {
+    @apply bg-indigo-500/20 backdrop-blur-lg rounded-lg shadow-lg border border-indigo-500;
+  }
+}
+
 @utility scrollbar-hide {
   scrollbar-width: none;
   -ms-overflow-style: none;

@@ -9,14 +9,14 @@ const ViewToggle = memo(function ViewToggle({ view, setView }) {
   return (
     <div className="flex gap-2">
       <button
-        className={`p-2 rounded-lg cursor-pointer ${view === 'list' ? 'bg-indigo-500/75 backdrop-blur-lg shadow-lg border-indigo-500 text-gray-200' : ''}`}
+        className={`p-2 rounded-lg cursor-pointer ${view === 'list' ? 'glassmorph-indigo text-gray-200' : ''}`}
         aria-label="List View"
         onClick={() => setView('list')}
       >
         <MemoizedIcon Icon={List} className="text-gray-200" />
       </button>
       <button
-        className={`p-2 rounded-lg cursor-pointer ${view === 'grid' ? 'bg-indigo-500/75 backdrop-blur-lg shadow-lg border-indigo-500 text-gray-200' : ''}`}
+        className={`p-2 rounded-lg cursor-pointer ${view === 'grid' ? 'glassmorph-indigo text-gray-200' : ''}`}
         aria-label="Grid View"
         onClick={() => setView('grid')}
       >
