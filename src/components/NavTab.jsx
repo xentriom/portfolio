@@ -14,7 +14,7 @@ const NavTab = ({ to, name }) => {
           {isActive && (
             <motion.div
               layoutId="underline"
-              className="absolute left-0 right-0 h-1 bg-indigo-400 rounded-b-sm"
+              className="absolute left-0 right-0 h-1 bg-indigo-400 rounded-b-xs"
               style={{ bottom: -8 }}
             />
           )}

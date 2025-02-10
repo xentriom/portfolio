@@ -13,7 +13,7 @@ const ContactForm = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="p-4 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-xl border-gray-700"
+      className="p-4 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-lg border-gray-700"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-grow gap-4 mb-4">
@@ -26,7 +26,7 @@ const ContactForm = () => {
             id="name"
             name="name"
             required
-            className="w-full p-1 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-700"
+            className="w-full p-1 border border-gray-200 rounded-md focus:outline-hidden focus:ring-2 focus:ring-indigo-700"
           />
         </div>
 
@@ -39,7 +39,7 @@ const ContactForm = () => {
             id="email"
             name="email"
             required
-            className="w-full p-1 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-700"
+            className="w-full p-1 border border-gray-200 rounded-md focus:outline-hidden focus:ring-2 focus:ring-indigo-700"
           />
         </div>
       </div>
@@ -53,7 +53,7 @@ const ContactForm = () => {
           name="message"
           rows={4}
           required
-          className="w-full p-1 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-700"
+          className="w-full p-1 border border-gray-200 rounded-md focus:outline-hidden focus:ring-2 focus:ring-indigo-700"
         />
       </div>
 

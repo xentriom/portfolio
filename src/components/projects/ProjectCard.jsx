@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const ProjectCard = ({ project, view, onClick }) => {
   return (
     <div
-      className={`transition-transform duration-300 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-xl border-gray-700 hover:scale-103 cursor-pointer ${
+      className={`transition-transform duration-300 bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-lg border border-gray-700 hover:scale-103 cursor-pointer ${
         view === 'list' ? 'flex items-center gap-4' : 'text-center'
       }`}
       onClick={onClick}

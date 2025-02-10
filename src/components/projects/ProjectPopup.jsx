@@ -40,7 +40,7 @@ const ProjectPopup = ({ project, onClose }) => {
       >
         <motion.div
           key="popup"
-          className="bg-gray-800/95 backdrop-blur-lg rounded-lg shadow-xl border-gray-800 relative max-w-lg w-full max-h overflow-auto"
+          className="bg-gray-800/95 backdrop-blur-lg rounded-lg shadow-lg border border-gray-800 relative max-w-lg w-full max-h overflow-auto"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0 }}
@@ -55,7 +55,7 @@ const ProjectPopup = ({ project, onClose }) => {
             }}
           >
             <motion.button
-              className="absolute top-2 right-2 text-gray-200 bg-gray-800/95 backdrop-blur-lg border-gray-800 p-1 rounded-full shadow-md"
+              className="absolute top-2 right-2 text-gray-200 bg-gray-800/95 backdrop-blur-lg border-gray-800 p-1 rounded-full shadow-lg"
               aria-label="Close Popup"
               onClick={onClose}
               whileHover={{ scale: 1.1 }}
@@ -131,7 +131,7 @@ const ProjectPopup = ({ project, onClose }) => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-1 px-2 bg-indigo-500 rounded-lg shadow-md text-sm text-gray-200 hover:bg-indigo-700"
+                    className="p-1 px-2 bg-indigo-500 rounded-lg shadow-lg text-sm text-gray-200 hover:bg-indigo-700"
                   >
                     {link.type}
                   </a>
