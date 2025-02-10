@@ -5,7 +5,8 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, message } = e.target.elements;
-    alert(name.value + email.value + message.value);
+    const text = `Dear ${name.value} (${email.value}),\n\nThank you for reaching out to me, as of right now I am unable to receive this message since this feature is not implemented yet. Please reach out on other platforms.\n\nSincerely,\nJason`;
+    alert(text);
   };
 
   return (
