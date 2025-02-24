@@ -15,7 +15,7 @@
     @apply bg-gray-800/95 backdrop-blur-lg rounded-lg shadow-lg border border-gray-800;
   }
   .glassmorph-indigo {
-    @apply bg-indigo-500/20 backdrop-blur-lg rounded-lg shadow-lg border border-indigo-500;
+    @apply bg-indigo-500/20 backdrop-blur-lg rounded-lg shadow-lg border border-indigo-500 hover:bg-indigo-700/50  transition-colors duration-200;
   }
 }
 

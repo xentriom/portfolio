@@ -131,7 +131,7 @@ const ProjectPopup = ({ project, onClose }) => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-1 px-2 bg-indigo-500 rounded-lg shadow-lg text-sm text-gray-200 hover:bg-indigo-700"
+                    className="p-1 px-2 glassmorph-indigo rounded-lg shadow-lg text-sm text-gray-200"
                   >
                     {link.type}
                   </a>
