@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 
@@ -26,7 +25,7 @@ const Home = () => {
           animate="visible"
           className="text-3xl font-bold mb-4"
         >
-          Heyo, I'm Jason
+          Heyo, I&apos;m Jason
         </motion.h1>
         <motion.p
           variants={{
