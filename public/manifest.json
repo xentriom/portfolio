@@ -1,0 +1,9 @@
+{
+  "name": "Jason Chen",
+  "short_name": "JC",
+  "description": "Personal website of Jason Chen",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#11111A",
+  "theme_color": "#11111A"
+}
