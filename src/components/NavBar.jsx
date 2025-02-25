@@ -1,5 +1,4 @@
 import { memo } from 'react';
-import { motion } from 'motion/react';
 import { NavItems } from '../utils/constants';
 import NavTab from './NavTab';
 
@@ -7,17 +6,11 @@ import NavTab from './NavTab';
 // Used in conjunction with NavTab component
 const NavBar = memo(function NavBar() {
   return (
-    <motion.nav
-      className="w-full max-w-2xl flex rounded-t-lg bg-gradient-to-r from-gray-800 to-gray-900"
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.3 }}
-    >
+    <nav className="w-full max-w-2xl flex glassmorph-gradient rounded-t-lg">
       {NavItems.map((item) => (
         <NavTab key={item.href} to={item.href} name={item.name} />
       ))}
-    </motion.nav>
+    </nav>
   );
 });
 

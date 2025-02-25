@@ -5,9 +5,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #11111aff;
 }
 
 @layer components {
+  .glassmorph-gradient {
+    @apply bg-gradient-to-r from-gray-800 to-gray-900 backdrop-blur-lg shadow-lg text-gray-200;
+  }
   .glassmorph-700 {
     @apply bg-gray-700/20 backdrop-blur-lg rounded-lg shadow-lg border border-gray-700;
   }
