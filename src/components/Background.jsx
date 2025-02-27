@@ -15,7 +15,7 @@ const Background = memo(function Background() {
         size={2}
         speed={0.3}
         opacity={0.6}
-        color="#FFF7CFFF"
+        color="#FFF7CF"
         position={[0, 0, -5]}
         scale={[20, 20, 20]}
       />

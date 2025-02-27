@@ -11,6 +11,7 @@ import ProjectPopup from '../components/projects/ProjectPopup';
 const Projects = () => {
   const { projects, loading, error } = useProject();
   const [view, setView] = useState(() => localStorage.getItem('view') || 'list');
+  const [sort, setSort] = useState(() => localStorage.getItem('sort') || 'id-asc');
   const [search, setSearch] = useState('');
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -22,6 +23,16 @@ const Projects = () => {
       }
     },
     [view]
+  );
+
+  const handleSortChange = useCallback(
+    (sortValue) => {
+      if (sort !== sortValue) {
+        setSort(sortValue);
+        localStorage.setItem('sort', sortValue);
+      }
+    },
+    [sort]
   );
 
   const handleSearchChange = useCallback((e) => {
@@ -36,13 +47,24 @@ const Projects = () => {
     setSelectedProject(null);
   }, []);
 
-  // Filter based on search, sort by project id
+  // Filter and sort projects based on search and sort values
   const filteredProjects = useMemo(() => {
     const lowercasedSearch = search.toLowerCase();
-    return projects
-      .filter((project) => project.name.toLowerCase().includes(lowercasedSearch))
-      .sort((a, b) => a.id - b.id);
-  }, [projects, search]);
+    let filtered = projects.filter((project) => project.name.toLowerCase().includes(lowercasedSearch));
+
+    switch (sort) {
+      case 'id-asc':
+        return filtered.sort((a, b) => a.id - b.id);
+      case 'id-desc':
+        return filtered.sort((a, b) => b.id - a.id);
+      case 'name-asc':
+        return filtered.sort((a, b) => a.name.localeCompare(b.name));
+      case 'name-desc':
+        return filtered.sort((a, b) => b.name.localeCompare(a.name));
+      default:
+        return filtered;
+    }
+  }, [projects, search, sort]);
 
   if (loading) return <Loading />;
   if (error) return <Error message={error} />;
@@ -54,7 +76,7 @@ const Projects = () => {
 
       {/* Search and View Controls */}
       <div className="flex gap-5 items-center mb-6">
-        <SearchBar value={search} onChange={handleSearchChange} />
+        <SearchBar value={search} onChange={handleSearchChange} sortValue={sort} onSortChange={handleSortChange} />
         <ViewToggle view={view} setView={handleSetView} />
       </div>
 
